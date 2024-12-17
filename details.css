@@ -1,0 +1,77 @@
+/* Основные стили для страницы деталей */
+.details-page {
+    padding: 20px; /* Отступы вокруг всей страницы */
+    max-width: 1200px; /* Максимальная ширина страницы */
+    margin: 0 auto; /* Центрирование страницы по горизонтали */
+    text-align: center; /* Выравнивание текста по центру */
+    color: azure; /* Цвет текста на странице */
+}
+
+.details-page h1 {
+    font-size: 36px; /* Размер шрифта заголовка */
+    margin-bottom: 20px; /* Отступ снизу у заголовка */
+    color: azure; /* Цвет заголовка */
+}
+
+.details-page .description {
+    font-size: 18px; /* Размер шрифта описания */
+    line-height: 1.8; /* Межстрочный интервал */
+    color: azure; /* Цвет текста */
+    margin: 20px 0; /* Отступы сверху/снизу */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.details-poster {
+    width: 50%; /* Ширина постера 50% от родительского контейнера */
+    max-width: 400px; /* Максимальная ширина постера */
+    border-radius: 10px; /* Закругленные углы у постера */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень вокруг постера */
+    margin-bottom: 30px; /* Отступ снизу */
+}
+
+/* Галерея */
+.details-gallery {
+    margin-top: 40px; /* Отступ сверху для галереи */
+    color: azure; /* Цвет текста в галерее */
+}
+
+.gallery-images {
+    display: flex; /* Использование flexbox для размещения изображений */
+    gap: 10px; /* Промежуток между изображениями */
+    flex-wrap: wrap; /* Элементы оборачиваются на новую строку, если не помещаются */
+    justify-content: center; /* Центрирование изображений по горизонтали */
+}
+
+.gallery-images img {
+    width: 200px; /* Ширина изображения */
+    height: auto; /* Автоматическая высота изображения */
+    border-radius: 8px; /* Закругленные углы у изображений */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень вокруг изображений */
+    transition: transform 0.3s, box-shadow 0.3s; /* Плавный переход для изменений */
+}
+
+.gallery-images img:hover {
+    transform: scale(1.05); /* Увеличивает изображение при наведении */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Увеличивает тень при наведении */
+}
+
+/* Трейлер */
+.details-trailer {
+    margin-top: 40px; /* Отступ сверху для блока с трейлером */
+}
+
+.details-trailer h2 {
+    font-size: 28px; /* Размер шрифта заголовка для трейлера */
+    margin-bottom: 20px; /* Отступ снизу у заголовка */
+    color: azure; /* Цвет заголовка */
+}
+
+iframe {
+    width: 100%; /* Ширина iframe на всю доступную ширину */
+    max-width: 800px; /* Максимальная ширина iframe */
+    height: 450px; /* Высота iframe */
+    border: none; /* Убирает рамку вокруг iframe */
+    border-radius: 10px; /* Закругленные углы у iframe */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень вокруг iframe */
+}
+

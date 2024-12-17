@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #190e4f, #000000);
+    color: azure;
+}
+
+
+header .logo {
+    font-size: 24px; /* Размер шрифта для логотипа */
+    font-weight: bold; /* Жирное начертание для логотипа */
+}
+
+nav ul {
+    list-style: none; /* Убирает маркеры у списка */
+    display: flex; /* Используется flexbox для размещения элементов меню */
+    gap: 20px; /* Промежуток между пунктами меню */
+}
+
+nav ul li a {
+    color: azure; /* Цвет текста ссылок в меню */
+    font-size: 16px; /* Размер шрифта для ссылок */
+    transition: color 0.3s; /* Плавный переход для изменения цвета */
+}
+
+nav ul li a:hover {
+    color: #f39c12; /* Изменяет цвет ссылки при наведении */
+}

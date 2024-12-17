@@ -1,0 +1,114 @@
+/* Сброс */
+* {
+    margin: 0; /* Убирает отступы у всех элементов */
+    padding: 0; /* Убирает внутренние отступы у всех элементов */
+    box-sizing: border-box; /* Учитывает границы и отступы в общую ширину и высоту элемента */
+}
+
+/* Общие стили */
+body {
+    font-family: 'Roboto', sans-serif; /* Задаёт шрифт для всего тела документа */
+    line-height: 1.6; /* Устанавливает межстрочный интервал для улучшения читаемости */
+    background: linear-gradient(135deg, #111b26, #121b22), /* Фон с градиентом */
+              repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 25%); /* Повторяющийся фон с лёгким паттерном */
+    color: #333; /* Устанавливает основной цвет текста */
+}
+
+h1, h2, h3 {
+    color: #444; /* Цвет заголовков */
+    margin-bottom: 20px; /* Отступ снизу у заголовков */
+    line-height: 1.3; /* Межстрочный интервал для заголовков */
+}
+
+p {
+    margin-bottom: 10px; /* Отступ снизу у абзацев */
+    color: #666; /* Цвет текста в абзацах */
+}
+
+a {
+    text-decoration: none; /* Убирает подчеркивание у ссылок */
+    color: inherit; /* Ссылка наследует цвет от родительского элемента */
+    transition: color 0.3s; /* Плавный переход при изменении цвета */
+}
+
+a:hover {
+    color: #f39c12; /* Цвет ссылки при наведении */
+}
+
+.back-button {
+    margin-top: 15px; /* Отступ сверху у кнопки */
+    text-align: center; /* Выравнивание кнопки по центру */
+}
+
+.back-button button {
+    background: linear-gradient(135deg, #5e4b8b, #70459e); /* Градиент для фона кнопки */
+    color: white; /* Цвет текста на кнопке */
+    border: none; /* Убирает рамку у кнопки */
+    padding: 15px 30px; /* Отступы внутри кнопки */
+    font-size: 16px; /* Размер шрифта на кнопке */
+    border-radius: 50px; /* Округлые углы у кнопки */
+    cursor: pointer; /* Изменяет курсор на указатель при наведении */
+    transition: box-shadow 0.3s ease; /* Плавный переход для тени кнопки */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Тень вокруг кнопки */
+}
+
+.back-button button:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Увеличивает тень при наведении */
+}
+
+/* Стили для секции о проекте */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Обеспечивает адаптивность */
+}
+
+.text-container {
+    max-width: 500px;
+    margin-left: 20px;
+}
+
+.author-photo {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ccc;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    font-size: 2rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #0056b3;
+}
+.container {
+    width: 100%; 
+    height: auto;
+    display: flex; /* Используем flex-контейнер */
+    flex-direction: column; /* Элементы располагаются в столбец */
+    gap: 20px; /* Отступы между элементами */
+    max-width: 1000px; /* Ограничиваем ширину для удобства чтения */
+    margin: 0 auto; /* Центрируем контейнер */
+}

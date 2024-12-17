@@ -1,0 +1,148 @@
+/* Адаптивность */
+
+/* Для мобильных устройств (до 480px) */
+@media (max-width: 480px) {
+    /* Шапка */
+    header {
+        flex-direction: column; /* Меню становится вертикальным */
+        text-align: center; /* Выравнивание элементов по центру */
+        padding: 10px; /* Уменьшаем отступы */
+    }
+
+    header .logo {
+        font-size: 1.5rem; /* Меньший размер шрифта для логотипа */
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-size: 14px; /* Уменьшаем шрифт для мобильных устройств */
+    }
+
+    /* Блок Hero */
+    .hero {
+        height: 50vh; /* Высота блока на мобильных устройствах */
+    }
+
+    .hero-overlay h1 {
+        font-size: 32px; /* Уменьшаем размер заголовка */
+    }
+
+    /* Контейнеры */
+    .container, .about-container {
+        padding: 20px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr; /* Карточки на весь экран */
+        gap: 15px; /* Уменьшаем промежуток */
+        align-content: center;
+    }
+
+    .card {
+        width: 100%; /* Карточки занимают всю ширину */
+    }
+
+    .details-page h1 {
+        font-size: 28px; /* Уменьшаем размер заголовка */
+    }
+
+    .details-gallery .gallery-images {
+        gap: 5px; /* Меньше промежутков между изображениями */
+    }
+
+    .details-gallery .gallery-images img {
+        width: 100%; /* Изображения занимают всю ширину */
+        height: auto;
+    }
+
+    .details-trailer iframe {
+        width: 100%;
+        max-width: 100%;
+        height: 300px; /* Уменьшаем высоту видео */
+    }
+}
+
+/* Для планшетов (до 768px) */
+@media (max-width: 768px) {
+    /* Шапка */
+    header {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    header p {
+        font-size: 2rem;
+    }
+
+    header .logo {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Блок Hero */
+    .hero {
+        height: 60vh; /* Высота блока на планшетах */
+    }
+
+    .hero-overlay h1 {
+        font-size: 36px;
+    }
+
+    /* Контейнеры */
+    .container, .about-container {
+        padding: 20px;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 карточки в ряд */
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    /* Стили для страницы деталей */
+    .details-page h1 {
+        font-size: 32px;
+    }
+
+    .details-trailer iframe {
+        height: 350px; /* Видео становится чуть выше */
+    }
+    .about h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        flex-direction: column; /* Вертикальное выравнивание */
+        text-align: center;
+    }
+
+    .author-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .social-icon {
+        font-size: 1.5rem;
+    }
+
+    .back-button button {
+        width: 35%;
+    }
+}
+
+
